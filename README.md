@@ -4,7 +4,7 @@
 
 </div>
 <div align="center">
-  [logo](/cover.jpg)
+  <img src="/cover.jpg" style="height: 250px; >
 </div>
 <p>
   Alura Imersão Back End é um evento voltado para iniciantes no mundo da programação, com foco no desenvolvimento back-end.
