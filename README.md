@@ -3,7 +3,9 @@
   # ALURA IMERSÃO BACK END
 
 </div>
-
+<div align="center">
+  [logo](/cover.jpg)
+</div>
 <p>
   Alura Imersão Back End é um evento voltado para iniciantes no mundo da programação, com foco no desenvolvimento back-end.
   São cinco aulas, nelas o objetivo é criar e gerenciar servidores utilizando Node.js e Express, além de entender conceitos fundamentais como rotas,
