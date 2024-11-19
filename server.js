@@ -34,6 +34,8 @@ const posts = [
 ];
 
 const app = express();
+app.use(express.json());
+
 app.listen(3000, () => {
   console.log("Servidor ta escutando??...")
 });
@@ -45,5 +47,6 @@ function postSearchID(id) {
 };
 
 app.get("/posts/:id", (req, res) => {
-  res.status(200).json(posts);
+  const index = postSearchID(req.params.id)
+  res.status(200).json(posts[index]);
 });
