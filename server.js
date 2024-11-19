@@ -2,28 +2,34 @@ import express from "express";
 
 const posts = [
   {
+    id: 1,
     description: "Uma foto",
     image: "https://placecats.com/millie/350/150",
   },
   {
+    id: 2,
     description: "Paisagem montanhosa",
-    image: "https://source.unsplash.com/random/350x150/?mountain",
+    image: "https://placecats.com/millie/350/150",
   },
   {
+    id: 3,
     description: "Cachorro fofo",
-    image: "https://source.unsplash.com/random/350x150/?dog",
+    image: "https://placecats.com/millie/350/150",
   },
   {
+    id: 4,
     description: "Comida deliciosa",
-    image: "https://source.unsplash.com/random/350x150/?food",
+    image: "https://placecats.com/millie/350/150",
   },
   {
+    id: 5,
     description: "Cidade à noite",
-    image: "https://source.unsplash.com/random/350x150/?city,night",
+    image: "https://placecats.com/millie/350/150",
   },
   {
+    id: 6,
     description: "Oceano calmo",
-    image: "https://source.unsplash.com/random/350x150/?ocean",
+    image: "https://placecats.com/millie/350/150",
   }
 ];
 
@@ -32,6 +38,12 @@ app.listen(3000, () => {
   console.log("Servidor ta escutando??...")
 });
 
-app.get("/api", (req, res) => {
-  res.status(200).send();
+function postSearchID(id) {
+  return posts.findIndex((post) => {
+    return post.id === Number(id)
+  })
+};
+
+app.get("/posts/:id", (req, res) => {
+  res.status(200).json(posts);
 });
