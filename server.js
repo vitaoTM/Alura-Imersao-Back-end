@@ -1,22 +1,12 @@
 import express from "express";
-import dbConnect from "./src/config/dbConfig.js";
-
-const connection = await dbConnect(process.env.STRING_CONNECTION);
+import routes from "./src/routes/postRoutes.js";
 
 const app = express();
+routes(app);
 
 app.listen(3000, () => {
   console.log("Servidor ta escutando??...")
 });
-
-async function  getAllPosts() {
-  const db = connection.db('imersao-alura');
-  const collection = db.collection("posts");
-  return collection.find().toArray();
-};
-
-
-
 
 // const posts = [
 //   {
