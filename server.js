@@ -1,7 +1,7 @@
 import express from "express";
 import dbConnect from "./dbConfig.js";
 
-await dbConnect(process.env.STRING_CONNECTION);
+const connection = await dbConnect(process.env.STRING_CONNECTION);
 
 const posts = [
   {
@@ -47,6 +47,12 @@ function postSearchID(id) {
   return posts.findIndex((post) => {
     return post.id === Number(id)
   })
+};
+
+async function  getAllPosts() {
+  const db = connection.db('imersao-alura');
+  const collection = db.collection("posts");
+  return collection.find().toArray();
 };
 
 app.get("/posts/:id", (req, res) => {
