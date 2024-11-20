@@ -1,4 +1,7 @@
 import express from "express";
+import dbConnect from "./dbConfig.js";
+
+await dbConnect(process.env.STRING_CONNECTION);
 
 const posts = [
   {
