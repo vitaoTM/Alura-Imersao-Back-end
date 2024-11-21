@@ -2,7 +2,7 @@ import express from "express";
 import multer from "multer";
 import { listPosts, postNewPost, imageUpload } from "../controllers/postsController.js";
 
-const upload = multer({dest:"./uploads", storage})
+const upload = multer({dest: "./uploads"})
 
 const routes = (app) => {
     app.use(express.json());
