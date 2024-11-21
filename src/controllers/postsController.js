@@ -1,7 +1,7 @@
-import getAllPosts from "../models/postsModel.js";
+import { getTodosPosts } from "../models/postsModels.js";
 
-export async function listPosts(req, res) {
-    const posts = await getAllPosts();
-    // const index = postSearchID(req.params.id)
+export async function listarPosts (req, res)
+{
+    const posts =  await getTodosPosts();
     res.status(200).json(posts);
-};
+}
