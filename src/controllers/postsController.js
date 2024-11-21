@@ -1,7 +1,7 @@
-import { getTodosPosts } from "../models/postsModels.js";
+import { getAllPosts } from "../models/postsModels.js";
 
-export async function listarPosts (req, res)
+export async function listPosts (req, res)
 {
-    const posts =  await getTodosPosts();
+    const posts =  await getAllPosts();
     res.status(200).json(posts);
 }

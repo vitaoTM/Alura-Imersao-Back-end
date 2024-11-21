@@ -1,9 +1,9 @@
-import conectarAoBanco from "../config/dbConfig.js";
+import dbConnect from "../config/dbConfig.js";
 
-const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
+const connection = await dbConnect(process.env.STRING_CONNECTION);
 
-export async function getTodosPosts(){
-    const db = conexao.db("imersao-alura");
-    const colecao = db.collection("posts");
-    return colecao.find().toArray();
+export async function getAllPosts(){
+    const db = connection.db("imersao-alura");
+    const collection = db.collection("posts");
+    return collection.find().toArray();
 }
