@@ -15,7 +15,7 @@ export async function createPost(newPost) {
     return collection.insertOne(newPost);
 }
 
-export async function updatePost(id, post) {
+export async function updatePost(id, newPost) {
     const db = connection.db("imersao-alura");
     const collection = db.collection("posts");
     const objID = ObjectId.createFromHexString(id);
