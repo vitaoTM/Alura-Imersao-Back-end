@@ -16,11 +16,11 @@
 
   |📙 __Imersão BackEnd__ | Resumos dos Desafios |
   |:----------------------|:----------:|
-  |🚀 [Dia 1](##dia-1)  | Criar um servidor com node; Gerar chave API do gemini |
-  |📦 [Dia 2](##dia-2)  | Verbos HTTP; Estrutura de Dados JS; Criação de Rotas; introdução ao MongoDB|
-  |📊 [Dia 3](##dia-3)  | MVC; Váriaveis de Ambiente; Organização de código; Manipulação de dados |
-  |📤 [Dia 4](##dia-4)  | Verbos HTTP; Rotas e Controllers; Envio de Dados para o Banco de Dados; Postman |
-  |🌐 [Dia 5](##dia-5)  | Atualização de post; Integração com Gemini; Integração com front-end; Publicação no google cloud |
+  |🚀 [Dia 1](#dia-1)  | Criar um servidor com node; Gerar chave API do gemini |
+  |📦 [Dia 2](#dia-2)  | Verbos HTTP; Estrutura de Dados JS; Criação de Rotas; introdução ao MongoDB|
+  |📊 [Dia 3](#dia-3)  | MVC; Váriaveis de Ambiente; Organização de código; Manipulação de dados |
+  |📤 [Dia 4](#dia-4)  | Verbos HTTP; Rotas e Controllers; Envio de Dados para o Banco de Dados; Postman |
+  |🌐 [Dia 5](#dia-5)  | Atualização de post; Integração com Gemini; Integração com front-end; Publicação no google cloud |
 
 </div>
 
